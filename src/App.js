@@ -170,7 +170,7 @@ class App extends React.Component {
                   <input className="form-control col-sm-3" type="text" readOnly="readonly" />
                 </div>
 
-                <h3>Essential hours</h3>
+                <h3>Additional hours</h3>
                 <div className="row">
                   <label className="col-sm-3">planned:</label>
                   <input className="form-control col-sm-3" type="text" placeholder="-120.00" value={this.state.essentialPlannedHours} readOnly="readonly" />
