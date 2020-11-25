@@ -128,7 +128,7 @@ class App extends React.Component {
     newArray[index] = event.target.value;
     let totalHours = 0;
     newArray.forEach((item)=> {
-      totalHours += item;
+      totalHours += parseInt(item);
     });
     this.setState({EssentialHours: newArray, essentialPlannedHours : totalHours}, this.updateStandardBaseHours);
   }
