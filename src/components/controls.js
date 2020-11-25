@@ -119,7 +119,15 @@ class Controls extends React.Component {
                 <div className="row">
                     <div className="col-5"></div>
                     <p className="col-2 alert alert-info" >hours : {this.props.value > 0 ? "+" : ""}{this.props.value}</p>                        
-                    <div className="col-5"></div>
+                    <div className={"row lxp-multipler-btn col-5 " + multiplierSection}>
+
+                        <label className="col-1 lxp-label-left">*</label>
+                        <input id="mul1" 
+                        type="text" 
+                        className="form-control col-3" 
+                        value={this.props.multiplier} 
+                        onChange={this.props.multiplierChange} />
+                    </div>
                 </div>
                          
                 <div className="row lxp-question">  
@@ -134,18 +142,7 @@ class Controls extends React.Component {
                     onChange={this.onSlide} />
                     <label className="col-5 lxp-question-lr">{this.state.questions[this.props.index].maxLabel}</label>  
                     
-                    <div className={"row lxp-multipler-btn col-4 " + multiplierSection}>
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-plus-circle col-xl-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                        </svg>
-                        <label className=" lxp-question-lr">multiplier </label>
-                        <input id="mul1" 
-                        type="text" 
-                        className="form-control col-xl-3" 
-                        value={this.props.multiplier} 
-                        onChange={this.props.multiplierChange} />
-                    </div>
+                    
                 </div>
                 
             </div>

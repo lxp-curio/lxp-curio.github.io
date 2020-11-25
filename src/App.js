@@ -228,7 +228,7 @@ class App extends React.Component {
         <footer className="container">
           <div className="card">
             <div className="card-body">
-              <h3 className="display-12" >Edit multiplier:</h3>
+              <h3 className="display-12" >Edit:</h3>
               <label className="switch">
                 <input type="checkbox" onChange={this.handleEditChange} />
                 <span className="slider round"></span>
