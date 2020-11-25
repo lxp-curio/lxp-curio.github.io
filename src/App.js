@@ -60,7 +60,7 @@ class App extends React.Component {
 
   updateStandardBaseHours() {
     this.setState({
-      SBHratio: this.state.standardHours/ (this.state.essentialPlannedHours + this.state.additionalPlannedHours )
+      SBHratio: (this.state.essentialPlannedHours + this.state.additionalPlannedHours ) / this.state.standardHours
     }, this.sessionRecord());
   }
 
