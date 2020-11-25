@@ -20,11 +20,6 @@ footer p {
   color: #FFF;
 }
 
-
-.lxp-question label{
-  margin-right: 20px;
-}
-
 .lxp-multipler-btn path {
   color: #0c5460;
 }
@@ -94,4 +89,24 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.lxp-question label {
+  color: gray;
+}
+
+.lxp-label-left {
+  text-align: right;
+}
+
+.lxp-page-number {
+  text-align: center;
+}
+
+.alert.alert-info input[type="text"] {
+  border-color: #0c5460;
+  background-color: #d1ecf1;
+  color: #0c5460;
+  font-weight: 700;
+  margin: auto;
 }
